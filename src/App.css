@@ -38,11 +38,16 @@ button:hover{
   margin-left: 6%;
 }
 
+.cont3{
+  position: absolute;
+  top: 26%;
+  left: 40%;
+}
 textarea{
   box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
   padding: 50px 25px 25px 25px;
-    font-size: 24px;
-    border-radius: 10px;
+  font-size: 24px;
+  border-radius: 10px;
   height: 260px;
   width: 260px;
 }
