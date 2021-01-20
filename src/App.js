@@ -31,6 +31,8 @@ function App() {
        <form>
          <textarea id="getin" placeholder="Write Note here" onChange={gettingIN}>
          </textarea>
+         <i class="fas fa-check-square" id="checkBTN"></i>
+         <i class="fas fa-window-close" id="cutBTN"></i>
        </form>
       </div>
       
