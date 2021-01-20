@@ -16,9 +16,9 @@ function App() {
 
       {/* create note button */}
       <div className="cont1">
-      <button>
+       <button>
         Create Note
-      </button>
+       </button>
       </div>
 
       {/* show written notes here  */}
