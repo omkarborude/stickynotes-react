@@ -5,6 +5,8 @@ function App() {
   const [getin , setgetin] = useState("");
   const [showwritenote,setshowwritenote] = useState(false);
 
+  const [notelist,updateNoteList] = 
+
 
  
 
@@ -46,7 +48,7 @@ function App() {
        <form>
          <textarea id="getin" placeholder="Write Note here" onChange={gettingIN}>
          </textarea>
-         
+
          <i class="fas fa-check-square" id="checkBTN"></i>
          <i class="fas fa-window-close" id="cutBTN" onClick={() => setshowwritenote(false)}></i>
        </form>
