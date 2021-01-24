@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import './App.css';
 
 function App() {
-  const [getin , setgetin] = useState("");
+  const [getin , setgetin] = useState(null);
   const [showwritenote,setshowwritenote] = useState(false);
 
-  const [notelist,updateNoteList] = 
+  const [notelist,updateNoteList] = useState([]);
 
 
  
@@ -17,8 +17,9 @@ function App() {
   }
 
 
-  function createNOTEhandler() {
-    
+  function addNoteHandler() {
+    updateNoteList([...notelist,getin]);
+    console.log(getin);
   }
 
 
@@ -49,7 +50,7 @@ function App() {
          <textarea id="getin" placeholder="Write Note here" onChange={gettingIN}>
          </textarea>
 
-         <i class="fas fa-check-square" id="checkBTN"></i>
+         <i class="fas fa-check-square" id="checkBTN" onClick={addNoteHandler}></i>
          <i class="fas fa-window-close" id="cutBTN" onClick={() => setshowwritenote(false)}></i>
        </form>
       </div>:null
