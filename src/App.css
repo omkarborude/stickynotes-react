@@ -11,7 +11,7 @@
   margin: auto;
 }
 
-button{
+#createBTN{
   height: 50px;
   width: 100px;
   font-size: 14px;
@@ -50,4 +50,52 @@ textarea{
   border-radius: 10px;
   height: 260px;
   width: 260px;
+}
+#checkBTN{
+  position: absolute;
+  top: 3%;
+  right: 15%;
+}
+#checkBTN:hover{
+  color: blue;
+  cursor: pointer;
+}
+#cutBTN{
+  position: absolute;
+  top: 3%;
+  right: 5%;
+}
+#cutBTN:hover{
+  color: red;
+  cursor: pointer;
+}
+
+#sticktext{
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  font-size: 26px;
+  overflow: hidden;
+}
+
+#stick{
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: transform .4s;
+}
+#stick:hover{
+  transform: scale(1.1);
+}
+#trashBTN{
+  float: right;
+  border: none;
+  font-size: 20px;
+}
+#trashBTN:hover{
+  cursor: pointer;
+  color: orangered;
 }
