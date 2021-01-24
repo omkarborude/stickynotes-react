@@ -18,8 +18,11 @@ function App() {
 
 
   const addNoteHandler = () =>  {
+    
     updateNoteList((oldnotes) => {
       return [...oldnotes,getin];
+      
+
     }) 
   }
 
@@ -48,7 +51,7 @@ function App() {
                <h1 id="sticktext"> {noteval}  </h1>
              
               </div>
-             
+  
           })
         }
       </div>
