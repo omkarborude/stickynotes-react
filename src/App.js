@@ -3,7 +3,10 @@ import './App.css';
 
 function App() {
   const [getin , setgetin] = useState("");
+  const [showwritenote,setshowwritenote] = useState(false);
 
+
+ 
 
   // function Get Text in
   function gettingIN(event) {
@@ -11,30 +14,44 @@ function App() {
     setgetin(textin);
   }
 
+
+  function createNOTEhandler() {
+    
+  }
+
+
+
+  
+
+
   return (
     <div className="maindiv">
 
       {/* create note button */}
       <div className="cont1">
-       <button>
+       <button onClick={() => setshowwritenote(true)} id="createBTN">
         Create Note
        </button>
       </div>
 
       {/* show written notes here  */}
       <div className="cont2">
-
+        
       </div>
 
       {/* show write note div */}
+      {
+      showwritenote?
       <div className="cont3">
        <form>
          <textarea id="getin" placeholder="Write Note here" onChange={gettingIN}>
          </textarea>
+         
          <i class="fas fa-check-square" id="checkBTN"></i>
-         <i class="fas fa-window-close" id="cutBTN"></i>
+         <i class="fas fa-window-close" id="cutBTN" onClick={() => setshowwritenote(false)}></i>
        </form>
-      </div>
+      </div>:null
+      }
       
 
 
