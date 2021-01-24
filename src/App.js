@@ -17,9 +17,10 @@ function App() {
   }
 
 
-  function addNoteHandler() {
-    updateNoteList([...notelist, getin]);
-    setgetin("");
+  const addNoteHandler = () =>  {
+    updateNoteList((oldnotes) => {
+      return [...oldnotes,getin];
+    }) 
   }
 
 
@@ -39,7 +40,11 @@ function App() {
 
       {/* show written notes here  */}
       <div className="cont2">
-        
+        {
+          notelist.map((noteval) => {
+             return <li> {noteval} </li>
+          })
+        }
       </div>
 
       {/* show write note div */}
