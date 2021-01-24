@@ -19,7 +19,7 @@ function App() {
 
   function addNoteHandler() {
     updateNoteList([...notelist,getin]);
-    console.log(getin);
+    setgetin('');
   }
 
 
