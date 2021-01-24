@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './App.css';
 
 function App() {
-  const [getin , setgetin] = useState(null);
+  const [getin,setgetin] = useState(null);
   const [showwritenote,setshowwritenote] = useState(false);
 
   const [notelist,updateNoteList] = useState([]);
@@ -18,8 +18,8 @@ function App() {
 
 
   function addNoteHandler() {
-    updateNoteList([...notelist,getin]);
-    setgetin('');
+    updateNoteList([...notelist, getin]);
+    setgetin("");
   }
 
 
