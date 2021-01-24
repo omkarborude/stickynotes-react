@@ -42,7 +42,13 @@ function App() {
       <div className="cont2">
         {
           notelist.map((noteval) => {
-             return <li> {noteval} </li>
+             return <div id="stick">
+               <button id="trashBTN"><i class="fas fa-border-none fa-trash-alt"></i>
+               </button>
+               <h1 id="sticktext"> {noteval}  </h1>
+             
+              </div>
+             
           })
         }
       </div>
