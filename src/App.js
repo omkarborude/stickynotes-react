@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './App.css';
 
 function App() {
-  const [getin,setgetin] = useState(null);
+  const [getin,setgetin] = useState("");
   const [showwritenote,setshowwritenote] = useState(false);
 
   const [notelist,updateNoteList] = useState([]);
@@ -21,10 +21,9 @@ function App() {
     
     updateNoteList((oldnotes) => {
       return [...oldnotes,getin];
-      
-
-    }) 
-  }
+    });
+    setgetin("");
+  };
 
 
 
@@ -61,7 +60,7 @@ function App() {
       showwritenote?
       <div className="cont3">
        <form>
-         <textarea id="getin" placeholder="Write Note here" onChange={gettingIN}>
+         <textarea id="getin" placeholder="Write Note here" value={getin} onChange={gettingIN}>
          </textarea>
 
          <i class="fas fa-check-square" id="checkBTN" onClick={addNoteHandler}></i>
